@@ -1,0 +1,51 @@
+<html> 
+<head> 
+<title> New Document </title> 
+</head> 
+<body> 
+ <form action="somepage.asp"> 
+<p>Time passed:</p>
+ <input type="button" value="开始" name="btnStart"/> 
+ <input type="button" value="重置" name="btnReset"/> 
+ </form> 
+</body> 
+</html> 
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+var txt=document.forms[0].elements["txt1"]; 
+var btnStart=document.forms[0].elements["btnStart"]; 
+var btnReset=document.forms[0].elements["btnReset"] 
+
+var id; 
+ 
+var seed=0; 
+btnStart.onclick=function(){ 
+  
+ if(this.value=="开始"){ 
+  
+ this.value="停止"; 
+
+ btnReset.disabled=true; 
+ 
+ id=window.setInterval(tip,10); 
+ }else{ 
+
+ this.value="开始"; 
+ 
+ btnReset.disabled=false; 
+ 
+ window.clearInterval(id); 
+ } 
+} 
+
+btnReset.onclick=function(){ 
+ seed=0; 
+} 
+ 
+function tip(){ 
+ seed++; 
+ txt.value=seed/100; 
+} 
+  
+</script>
