@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fruit</title>
+</head>
+<body>
+
+<p id="demo">水果</p>
+<button onclick="myFunction()">click</button>
+<script>
+function myFunction(){
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits.push("Lemon","Pinapple")
+    fruits.sort();
+    fruits.reverse();
+	var x=document.getElementById("demo");
+    
+	x.innerHTML=fruits;
+}
+</script>
+
+</body>
+</html>
