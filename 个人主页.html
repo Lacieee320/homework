@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <title>李昕悦的个人主页</title>
+</head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="页面1.css" type="text/css">
+</head>
+
+<body>
+   <script type="text/javascript">
+   /*触发事件改变图片路径*/
+		function smile(){
+	document.getElementById('png1').src="IMG/GIRL1.png";
+}
+function normal(){
+	document.getElementById('png1').src="IMG/GIRL2.png";
+}
+function handle1() {
+    document.getElementById('png1').src='IMG/dialog1.png';
+}
+function handle2() {
+    document.getElementById('png1').src='IMG/dialog2.png';
+}
+function handle3() {
+    document.getElementById('png1').src='IMG/dialog3.png';
+}
+        </script>
+
+    <div class="miaodian"> 
+
+        <ul>
+            <li>
+                <a href="#one">
+                <div class="threeD">基本信息</div>
+                <div class="threeD">点击查看</div>
+               
+                </a>
+            </li>
+            <li> 
+                <a href="#two"> 
+                <div class="threeD">我的专业</div>
+                <div class="threeD">点击查看</div>
+                </a>
+            </li>
+            <li>
+                <a href="#three">
+                <div class="threeD">兴趣爱好</div>
+                <div class="threeD">不务正业</div>
+                </a>
+            </li>
+            <li>
+                <a onclick="alert('收藏成功')">
+                <div class="threeD">收藏</div>
+                <div class="threeD">收藏</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="homebox">
+        <header>
+        </header>
+       
+        <nav>
+            <ul>
+                <li class="left">
+                    <img class="logo" src="IMG/head.jpg" width="120px">
+                    <a class="one" href="#">
+                        <img src="  IMG/更多.svg">
+                        <span>选项</span>
+                        <img src="IMG/down.svg">
+                    </a>
+                    <aside>
+                        <span>
+                        <ol class="zuo">
+                            <li class="con">简介</li>
+                            <li >location</li>
+                           <li>major</li>
+                            <a href="#four"><li>work</li></a>
+                            
+                        </ol>
+                    </span>
+                        <ol class="you">
+                            <li class="con">最近</li>
+                            <li>游戏剧本怎么写</li>
+                            <li>面纱</li>
+                            <li>瓦尼塔斯的手记</li>
+                            <li>极乐disco</li>
+                           <a href="#" onclick="alert('是个阴间游戏 快逃！')"><li>文学俱乐部</li></a>  
+                        </ol>
+                    </aside>
+
+                </li>
+                <li class="center">
+                    <form>
+                        <input type="text" placeholder="什么也搜索不到">
+                    </form>
+                </li>
+
+        
+                    
+                <li class="right">
+                
+                     <a href="#" onclick="alert('这是李昕悦的个人主页')">关于</a>
+                    <a href="#"onclick="alert('如有建议请联系邮箱1211829222@qq.com')" >反馈</a>
+                </li>
+            </ul>
+        </nav>
+
+            
+            <div class="slide">
+                
+                <input type="radio" name="button" value="0" id="button1" checked hidden onclick=handle1()> 
+                <label for="button1"></label>
+        
+                <input type="radio" name="button" value="1" id="button2" hidden onclick=handle2()>
+                <label for="button2" ></label>
+        
+                <input type="radio" name="button" value="1" id="button3" hidden onclick=handle3()>
+                <label for="button3"></label>
+        
+        
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+                
+              
+               
+        
+        </div>
+        <img id="png1"  onmousedown="smile()" onmouseup="normal()"  src="IMG/GIRL2.png" height="300px" >
+    </div>
+   
+    
+   
+    <div class="now" id="one">
+
+        <header >基本信息</header>
+
+        <table style="border:solid 3px black;margin: auto; " ><tr><th colspan="4"><div style="font-size:40px;text-align: left;">李昕悦</div></th></tr>
+            <tr><td  border="none" colspan="2"  style="background-color:#ffc5a0;color:#6e9bcc;border:none"><b>address:HDU</b><br /><b>XiaSha High Education Area</b><br /><br /><b>WeChat:lxy1211829222</b><br /><br /><b>Birthday:2001.06.06</b><br /><br /><br /><b>Tel</b>:2166071<br /><b>Mail:</b><span style="color:#fff8a7;"><i>Lacie@yeah.net</i></span></td>
+            <td border="none"><img id="Me" src="IMG/111.jpg" /></div></td></tr>
+            <th  id="center"><br />Editing,writing,and web development services<br /><br /></th>
+            
+            </table>
+            
+    </div>
+   
+   
+      
+    <div class="type" id="two">
+        <a
+            href="media/20192019传播学（新媒体方向）.pdf">我的专业(click me!)</a>
+        <ul>
+            <li>
+                <a href="media/1.txt"><img src="IMG/shuxue.jpg" ></a>
+                <p class="one">term1</p>
+            </li>
+            <li>
+               
+                <a href="media/2.txt"><img src="IMG/jvben.jpg"></a>
+                <p class="two">term2</p>
+            </li>
+            <li>
+                <a href="media/3.txt"><img src="IMG/jianji.JPG"></a>
+                <p class="three">term3</p>
+            </li>
+            <li>
+                <a href="media/4.txt"><img src="IMG/daima.jpg"></a>
+                <p class="four">term4</p>
+            </li>
+        </ul>
+       
+        
+    </div>
+
+    
+    <div class="will" id="four">
+        <p id="bt">以下是近期所作&nbsp;&nbsp;&nbsp;——————————————————————————————————————</p>
+        <p id="iv">
+            <video src="media/fruit.mp4" controls="controls" autoplay loop muted height="350px"></video>
+            
+        </p>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>运用Adobe Effects软件做的简易动画。</b><br>
+            <strong>制作日期：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2021年5月10日</strong><br>
+            <strong id="biaoqian">标签：<br>
+                <span>动画</span><span>3D</span><span>文字特效</span></strong>
+        </p></div>
+        <br>
+        <div class="will" >
+           
+            <p id="iv">
+                <video src="media/cube.mp4" controls="controls" autoplay loop muted height="350px"></video>
+                
+            </p>
+            <p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <b>运用Adobe Effects等软件制作的科幻感3D空间。</b><br>
+                <strong>发行日期：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2020年6月5日</strong><br>
+                <strong id="biaoqian">该产品的热门用户自定义标签：<br>
+                    <span>AE</span><span>3D空间</span><span>摄像机动画</span><span>特效设计</span></strong>
+            </p></div>
+            <br>
+          
+<br>
+<br>
+    <br>
+    <br>
+<br>
+    <div class="select">
+        <header id="three">兴趣爱好</header>
+        <ul>
+            <li>
+                <hgroup>
+                    <video src="media/disco.mp4" width="266px" height="150px" loop muted autoplay></video>
+                    <h2>极乐迪斯科</h2>
+                    <h2>开发商: <a href="https://zaumstudio.com/">ZA/UM</a></h2>
+                    <h2>发行商: ZA/UM</h2>
+                    <h2>个人非常喜欢的一款角色扮演游戏</h2>
+                    
+                </hgroup>
+            </li>
+
+            
+            <li>
+                <hgroup>
+                    <video src="media/moviee.mp4" width="266px" height="150px" loop muted autoplay></video>
+                    <h2>革命之路</h2>
+                    <h2>导演: <a href="https://baike.baidu.com/item/%E8%90%A8%E5%A7%86%C2%B7%E9%97%A8%E5%BE%B7%E6%96%AF">萨姆·门德斯</a></h2>
+                    <h2> <a href="https://movie.douban.com/subject/2037012/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;豆瓣影评</a></h2>
+                    <h2 style="text-decoration: line-through;">《当Rose和Jack结婚后》</h2>
+                </hgroup>
+            </li>
+            <li>
+                <hgroup>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>游戏剧本怎么写</h2>
+                    <h2>作者: 佐佐木智广</h2>
+                    <h2>出版社: 人民邮电出版社</h2>
+                    <h2>本书从人物、世界体系、台词等角度入手，通过解析多部经典游戏、动漫作品的剧本细节，通俗而又系统地讲解了游戏剧本的构建之法，是游戏设计的入门佳作。</h2>
+                </hgroup>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="up">
+        <a href="#"><img src="IMG/置顶.svg" title="置顶"></a>
+    </div>
+
+    <div class="footer">
+        
+            <hr size="1" width="71%">
+            <section>
+            </section>
+            
+    </div>
+    
+</body>
+
+    
+</html>
