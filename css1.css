@@ -1,0 +1,661 @@
+body,
+ul,
+li,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+a:link,
+a:visited {
+    color: #999999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+
+
+body:not(nav) {
+    background-image: linear-gradient(to right bottom, #929FD1, #C3AAD1);
+}
+
+.miaodian{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.miaodian ul{
+    display: flex;
+    position: absolute;
+    margin-top:130px ;
+    margin-left: 0px;
+    z-index: 999;
+}
+
+.miaodian ul li{
+    position: relative;
+    list-style: none;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    /* 让子元素保留其3D位置 */
+    transform-style:preserve-3d ;
+    transition: all 1s;
+}
+
+.miaodian ul li:hover .threeD:first-child{
+    background-color: #51938f;
+    background-size: 5px 5px;
+    background-position: 30px 30px;
+    background-image: linear-gradient(
+        45deg,
+        #478480 25%,
+        black 25%
+        #478480 75%,
+        #478480
+    );
+}
+
+.miaodian ul li:hover{
+    transform: rotateX(90deg);
+}
+
+.miaodian ul li .threeD{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.miaodian ul li .threeD:first-child{
+    background-color: #74adaa;
+    transform: translateZ(25px);
+}
+
+.miaodian ul li .threeD:last-child{
+    background-color: #51938f;
+    background-size: 5px 5px;
+    background-position: 30px 30px;
+    background-image: linear-gradient(
+        45deg,
+        #478480 25%,
+        black 25%
+        #478480 75%,
+        #478480
+    );
+    /* 让第二个面往下移动25px 沿着X轴旋转-90度 */
+    transform: translateY(25px) rotateX(-90deg);
+}
+/*homebox*/
+.homebox {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    margin: 100px auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide ul {
+    margin: 10px 0;
+    padding: 0;
+    width: calc(800px * 3);
+    transition: all .5s;
+}
+.slide li {
+    float: left;
+    width: 800px;
+    height: 500px;
+    list-style: none;
+    line-height: 500px;
+    font-size: 50px;
+}
+.slide li:nth-child(1) {
+    background-image: URL(IMG/cat.JPG);
+    background-size:100% 100%;
+}
+.slide li:nth-child(2) {
+    background-image: URL(IMG/jining.jpg);
+    background-size:100% 100%;/*拉伸图片*/
+   
+}
+.slide li:nth-child(3) {
+    background-image:URL(IMG/HDU.JPG);
+    background-size:100% 100%;}
+.slide input[name="button"] {
+    display: none;
+
+}
+.slide label[for^="button"] {
+    position: absolute;
+    top: 450px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.slide label[for="button1"] {
+    left: 40%;
+}
+.slide label[for="button2"] {
+    left: 45%;
+}
+.slide label[for="button3"] {
+    left: 50%;
+}
+#button1:checked ~ul {
+    margin-left: 0;
+}
+#button2:checked ~ul {
+    margin-left: -800px;
+}
+#button3:checked ~ul {
+    margin-left: -1600px;
+}
+#button1:checked ~ label[for="button1"] {
+    background: orangered;
+}
+#button2:checked ~ label[for="button2"] {
+    background: orangered;
+}
+
+#button3:checked ~ label[for="button3"] {
+    background: orangered;
+}
+
+#png1 {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+}
+/*介绍主页*/
+.homebox header {
+    width: 100%;
+    height: 40px;
+    background: rgb(23, 26, 33);
+    position: absolute;
+    z-index: 999;
+}
+
+.homebox header .con {
+    width: 1030px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.homebox header .right {
+    width: 75px;
+    height: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+.homebox header .left {
+    margin-top: 10px;
+    float: left;
+}
+
+.homebox header .left a {
+    margin-left: 15px;
+}
+
+.homebox header .right a {
+    margin: 10px;
+}
+
+.homebox nav {
+    width: 100%;
+    height: 90px;
+    background: rgb(23, 26, 33);
+    position: absolute;
+    top: 40px;
+    border-bottom: 1px solid #ffffff;
+    z-index: 1000;
+}
+
+.homebox nav ul {
+    width: 1030px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.homebox nav ul li {
+    float: left;
+    margin-right: 19%;
+}
+
+.homebox nav ul .left a {
+    display: inline-block;
+    height: 60px;
+    margin: 30px auto;
+    position: relative;
+}
+.homebox nav ul .left{
+    height: 60px;
+}
+.homebox nav ul .left a img {
+    vertical-align: middle;
+}
+
+/*把此元素放于父元素的中部*/
+.homebox nav ul .left a span {
+    margin: 0 5px;
+    font-size: large;
+}
+
+.homebox aside {
+    display: none;
+    width: 380px;
+    height: 390px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 90px;
+    color: white;
+}
+
+.homebox nav ul .left:hover aside {
+    display: block;
+}
+
+.logo {
+    margin-top: 10px;
+    float: left;
+margin-right: 30px;}
+
+.homebox aside ol {
+    width: 155px;
+    float: left;
+}
+
+.homebox aside ol li {
+    width: 155px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-family: "宋体";
+    font-size: 20px;
+}
+
+.homebox aside ol li.con {
+    font-size: 30px;
+    text-indent: 0;
+    font-family: "微软雅黑";
+    padding: 20px 0;
+    color: aqua;
+}
+
+.homebox aside ol li:hover {
+    color: black;
+}
+
+.homebox aside .zuo {
+    margin: 10px 0 0 68px;
+}
+
+.homebox aside .you {
+    margin-top: 10px;
+}
+
+ .homebox nav ul .center input {
+                    width: 180px;
+                    height: 30px;
+                    border: 1px solid #ffffff;
+                    border-radius: 15px;
+                    color: #ffffff;
+                    line-height: 32px;
+                    background:black;
+                    padding-left: 30px;
+                    box-sizing: border-box;
+                    background: url(img/search.svg) no-repeat;
+                }
+
+
+.homebox nav ul .right {
+    float: right;
+    margin-top: -35px;
+    width: 280px;
+    height: 32px;
+    margin-right: 0;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.homebox nav ul .right a {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+/*基本信息*/
+.now {
+    width: 1519px;
+    height: 545px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+.now header{
+    font-size: 30px;
+    color: white;
+    margin-top: -65px;
+    text-align: center;
+}
+img#Me{width: 170px;height:250px;}
+th#center{vertical-align:middle}
+
+
+
+/*type*/
+.type {
+    position: relative;
+    margin: 0 auto;
+    height: 360px;
+    width: 1519px;
+}
+
+.type a{
+    font-size: 30px;
+    color: white;
+    margin:0 auto;
+    
+}
+.type.a:nth-child(1) {
+    
+    text-align: center;
+   }
+.type .one {
+    left: 120px;
+    top: 110px;
+    font-size: 33px;
+    opacity: 0.85;
+    position: absolute;
+}
+
+.type .two {
+    left: 120px;
+    top: 110px;
+    font-size: 33px;
+    opacity: 0.85;
+    position: absolute;
+}
+
+.type .three {
+    left: 120px;
+    top: 110px;
+    font-size: 33px;
+    opacity: 0.85;
+    position: absolute;
+}
+
+.type .four {
+    left: 120px;
+    top: 110px;
+    font-size: 33px;
+    opacity: 0.85;
+    position: absolute;
+}
+
+.type p {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+
+}
+
+
+
+
+.type ul {
+    position: absolute;
+    right: 70px;
+    top: 55px;
+    width: 1260px;
+}
+
+.type ul li {
+    width: 270px;
+    height: 70px;
+    float: left;
+    margin-right: 1%;
+    position: relative;
+    cursor: pointer;
+}
+
+.type a { font-size: 30px;
+    color: white;
+    margin:auto;
+    text-align: center;}
+   
+
+
+
+
+
+
+/*图片放大*/
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.type ul li img:hover {
+    animation: zoomIn 1s 1 forwards;
+}
+
+/* forwards	当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。  */
+
+/* 作品介绍 */
+.will {
+    width: 1519px;
+    height: 385px;
+    position: relative;
+    margin: auto;
+}
+
+.will p {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 265px;
+}
+
+.will #iv::after {
+    
+    position: absolute;
+    top: 180px;
+    left: 850px;
+}
+
+.will #iv {
+    position: absolute;
+    top: 35px;
+}
+
+.will p:nth-last-child(1) {
+    width: 380px;
+    position: absolute;
+    top: 190px;
+    left: 887px;
+    color: royalblue;
+    font-size: 15px;
+}
+
+.will img {
+    position: absolute;
+    top: 0%;
+}
+
+
+.will p span {
+    padding: 3px 5px;
+    border: rgb(59, 78, 93) 1.5px solid;
+    background: rgb(59, 78, 93);
+    border-radius: 10%;
+    color: royalblue;
+    margin-left: 2px;
+}
+
+.will p span:hover {
+    border: #7B68EE 1.5px solid;
+    background: #6A5ACD;
+    color: white;
+    cursor: pointer;
+}
+
+.will p strong {
+    color: rgb(132, 208, 214);
+}
+
+.will #biaoqian {
+    line-height: 30px;
+}
+
+
+
+
+
+/*兴趣爱好*/
+.select {
+    width: 1519px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.select header {
+    font-size: 30px;
+    color: white;
+    margin-top: -65px;
+    text-align: center;
+}
+
+.select ul {
+    width: 1260px;
+    height: 290px;
+    position: relative;
+    left: 252px;
+}
+
+.select ul li {
+    width: 266px;
+    height: 250px;
+    border: 1px solid #cccccc;
+    background: url(IMG/select3.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+    float: left;
+    margin-right: 8%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.select ul li:nth-child(2) {
+    background-image: url(IMG/film.jpg);
+    background-size:100% 100%;}
+
+.select ul li:nth-child(3) {
+    background-image: url(IMG/books.jpg);
+    background-size:100% 100%;
+}
+
+.select ul li hgroup {
+    position: relative;
+    left: 0;
+    top: -250px;
+    width: 266px;
+    height: 250px;
+    background: brown;
+    transition: all 0.5s ease-in 0s;
+}
+
+.select ul li:hover hgroup {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.select ul li h2 {
+    font-size: 15px;
+    color: #333333;
+}
+
+.select ul li h2 a {
+    font-size: 12px;
+    color: white;
+}
+
+/*置顶*/
+.up {
+    width: 1519px;
+    margin: auto;
+    position: relative;
+}
+
+.up a {
+    position: absolute;
+    top: -110px;
+    right: 120px;
+    border: antiquewhite 4px solid;
+    border-radius: 50%;
+}
+
+.up a:hover {
+    background-color: antiquewhite;
+    transition: background-color 0.8s ;
+}
+
+
+
+/*页脚*/
+.footer {
+    background: rgb(18, 27, 38);
+    width: 100%;
+    height: 128px;
+    top: 2px;
+}
