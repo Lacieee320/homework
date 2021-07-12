@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>you are late 2</title>
+    <style>
+        body,
+        img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        .home {
+
+            display: flex;
+            width: 700px;
+            height: 400px;
+            background-color: lightgrey;
+
+            flex-wrap: wrap;
+            margin: 50px 350px auto;
+            position: relative;
+        }
+
+        .twoRooms ul {
+            list-style: none;
+
+        }
+
+        .twoRooms li {
+            width: 300px;
+            height: 300px;
+            list-style: none;
+        }
+
+        .bedroom {
+            background-color: white;
+            width: 233px;
+            height: 40%;
+            margin: 10px;
+            flex-wrap: wrap;
+
+        }
+
+        .livingroom {
+            background-color: white;
+            width: 420px;
+            height: 40%;
+            margin: 10px;
+        }
+
+        .livingroomTwo {
+            background-color: white;
+            width: 420px;
+            height: 59%;
+            margin-left: -157px;
+            margin-bottom: 10px;
+            margin-top: -20px;
+        }
+
+        .cloackroom {
+            background-color: white;
+            width: 170px;
+            height: 30%;
+            margin-right: 10px;
+            margin-left: -45px;
+            margin-top: -20px;
+            margin-bottom: 0px;
+        }
+
+        .study {
+            background-color: white;
+            width: 170px;
+            height: 40%;
+            margin: 10px;
+            margin-left: -45px;
+
+        }
+
+        .balcony {
+            background-color: white;
+            flex-direction: column;
+            width: 60px;
+            height: 220px;
+            margin: 10px;
+            margin-top: -5px;
+            font-weight: bold;
+        }
+
+        .bed {
+            width: 70px;
+            height: 100px;
+            background-color: #ABBA90;
+            margin: 5px;
+        }
+
+        .pillow {
+            width: 40px;
+            height: 20px;
+            background-color: #588BC4;
+            margin-left: 12px;
+        }
+
+        .deskInBedroom {
+            background-color: #CAC59E;
+            width: 100px;
+            height: 30px;
+            margin-top: -130px;
+            margin-right: 20px;
+            float: right;
+            align-items: flex-start;
+        }
+
+        .deskInStudy {
+            background-color: #CAC59E;
+            width: 30px;
+            height: 80px;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+
+        .chair {
+            background-color: #E1D59C;
+            color: whitesmoke;
+            width: 30px;
+            height: 20px;
+            float: right;
+            margin-right: 80px;
+            margin-top: -80px;
+        }
+
+        .closet {
+            background-color: #89adbb;
+            color: whitesmoke;
+            width: 120px;
+            height: 20px;
+            float: right;
+            margin-right: 50px;
+            margin-top: -55px;
+
+        }
+
+        .bookcase {
+            background-color: #89adbb;
+            width: 100px;
+            height: 20px;
+            float: right;
+            margin-top: -20px;
+        }
+
+        .dinner {
+            background-color: #476850;
+            width: 120px;
+            height: 130px;
+            margin-top: 10px;
+            margin-left: 80px;
+            color: whitesmoke
+        }
+
+        .tv {
+            background-color: #92727C;
+            width: 80px;
+            height: 40px;
+            float: right;
+            color: whitesmoke;
+            margin-right: 100px;
+            margin-top: 30px;
+        }
+
+        .table {
+            background-color: #CCB8A0;
+            width: 80px;
+            height: 40px;
+            float: right;
+            margin-top: 100px;
+            margin-right: -90px;
+        }
+
+        .sofaOne {
+            background-color: #ABBA90;
+            width: 30px;
+            height: 50px;
+            float: right;
+            margin-top: 100px;
+        }
+
+        .sofaTwo {
+            background-color: #ABBA90;
+            width: 90px;
+            height: 30px;
+            float: right;
+            margin-top: 150px;
+            margin-right: -130px;
+
+        }
+
+        .out {
+            background-color: greenyellow;
+            width: 140px;
+            height: 20px;
+            float: right;
+            margin-top: 220px;
+            margin-right: 60px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: lightgray;
+            font-weight: bold;
+        }
+
+
+        a:hover {
+            color: lightgrey;
+            text-decoration: none;
+            text-shadow: 2px 2px #4E9C84;
+        }
+
+        .pillow:hover {
+            opacity: 0.8;
+        }
+
+        .bed:hover {
+            opacity: 0.8;
+        }
+
+        .chair:hover {
+            opacity: 0.8;
+        }
+
+        .dinner:hover {
+            opacity: 0.8;
+        }
+
+        .closet:hover {
+            opacity: 0.8;
+        }
+
+        .deskInBedroom:hover {
+            opacity: 0.8;
+        }
+
+        .deskInStudy:hover {
+            opacity: 0.8;
+        }
+
+        .tv:hover {
+            opacity: 0.8;
+        }
+
+        .table:hover {
+            opacity: 0.8;
+        }
+
+        .sofaOne:hover {
+            opacity: 0.8;
+        }
+
+        .sofaTwo:hover {
+            opacity: 0.8;
+        }
+
+        .bookcase:hover {
+            opacity: 0.8;
+        }
+
+        .stuff {
+            width: 260px;
+            height: 400px;
+            background-color: lightyellow;
+            margin: -400px 50px auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .introduction {
+            width: 700px;
+            height: 180px;
+            background-color: #CCA890;
+            margin-left: 350px;
+            margin-top: -240px;
+            color: white;
+            font-style: italic;
+            font-size: 20px;
+            
+        }
+button{
+    margin-left: 300px;
+border-radius: 10px;
+border-color: white;
+background-color: white;
+font-weight: bold;}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.z_wrap_time {
+    position: absolute;
+    right: -440px;
+    margin-top: 190px;
+    color: #f00;
+    font-size: 35px;
+    
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="home">
+
+        <div class="bedroom">
+            <a onclick="alert('因为时间紧张还没有来得及铺床。旁边的桌子上有一个上锁的抽屉。')"><b>卧室</b></a>
+            <div class="bed" ondblclick="getFive()">床
+                <div class="pillow" id="one">枕头</div>
+            </div>
+            <div class="deskInBedroom" ondblclick="getSix()">桌</div>
+            <div class="chair" onclick="alert('这里什么也没有')">椅</div>
+        </div>
+
+        <div class="livingroom"><a onclick="alert('茶几上摆满了各种文件。沙发下面黑漆漆地看着很脏，等今天放学回来打扫吧。')"><b>起居室</b></a>
+            <div class="dinner" onclick="alert('这里什么也没有')">餐桌</div>
+
+        </div>
+        <div class="balcony" ondblclick="getSeven()"><a onclick="alert('阳台晾晒着昨天刚刚换洗下来的衣服。通往阳台的玻璃门锁住了')"><b>阳台</b></a>
+        </div>
+        <div class="twoRooms">
+            <ul>
+                <li>
+                    <div class="cloackroom"><a onclick="alert('衣帽间的灯前天坏了，灯泡现在还没有换。')"><b>衣帽间</b></a>
+
+                    </div>
+
+                    <div class="study"><a onclick="alert('我一般在书房学习。书柜里放着一个密码箱。')"><b>书房</b></a>
+                        <div class="chair" onclick="alert('这里什么也没有')">椅</div>
+                        <div class="closet" id="two">衣柜</div>
+                        <div class="deskInStudy" ondblclick="getEight()">桌</div>
+                        <div class="bookcase" ondblclick="getNine()">书柜</div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="livingroomTwo">
+            <div class="tv" onclick="alert('这里什么也没有')">TV</div>
+            <div class="table" id="three">茶几</div>
+            <div class="sofaOne" onclick="alert('这里什么也没有')">沙发</div>
+            <div class="sofaTwo" id="four" ondblclick="getFour()" ;>沙发</div>
+            <div class="out" ondblclick="getTen()">玄关</div>
+        </div>
+
+        <div class="z_wrap_time">
+            游戏计时：<span id="z_hour">0</span> 时 <span id="z_minute">0</span> 分 <span id="z_second">0</span> 秒
+        </div>
+    </div>
+
+    <div class="stuff" id="lockers">
+
+
+
+    </div>
+    <br />
+    <img width="250px" height="250px" src="卡尔.png" />
+    </div>
+    <div class="introduction">
+        <p>游戏介绍：主人公今天起晚了，马上就要迟到了！可是上学要带的东西却还没有准备好，请帮他在家里寻找上学所需物品，找齐全部物品即可通关。鼠标单击左键搜查家具或者地点。<b>请注意，每个家具/地点只藏有一件物品，多点无用。一共有9件不同的物品需要找，找到物品后，请详细阅读物品说明！每个说明只能查看一次。点击下方按钮开始游戏。</b>
+        </p>
+        <button value="当前时间" id="timeOne" onclick="startGame()" >开始游戏</button>
+        <script>
+            var z_gameStart = false;
+            var z_timer;
+            function startGame()
+            {if (z_gameStart) {alert('游戏已开始');return false;} z_gameStart = true;
+var z_hourObj = document.getElementById('z_hour');var z_minuteObj = document.getElementById('z_minute');var z_secondObj = document.getElementById('z_second');
+z_timer = setInterval(function () { z_secondObj.innerText = parseInt(z_secondObj.innerText) + 1;
+                if (z_secondObj.innerText >= 60) {z_secondObj.innerText = 0;
+                        z_minuteObj.innerText = parseInt(z_minuteObj.innerText) + 1; }
+                    if (z_minuteObj.innerText >= 60) {
+                        z_minuteObj.innerText = 0;
+                        z_hourObj.innerText = parseInt(z_hourObj.innerText) + 1; } }, 1000);}
+var a = document.getElementById("one"); a.addEventListener("click", tipOne);a.addEventListener("click", getOne);function tipOne() { alert("找到了手机！屏幕上还显示着昨天没听完的歌。歌名是Captical Letters,是一首好听的英文歌") }
+        function getOne() {var phoneImg = document.createElement("img");       phoneImg.src = "smartphone.png";    
+                phoneImg.width = "80";
+                phoneImg.height = "80"
+                var lockOne = document.getElementById('lockers');  
+                lockOne.appendChild(phoneImg);       
+ };var b = document.getElementById("two"); b.addEventListener("click", tipTwo);b.addEventListener("click", getTwo);
+            function tipTwo() {
+                alert('找到了手电筒！因为时间太久，需要按两下开关才会亮。')}
+            function getTwo() {var flashImg = document.createElement("img");     
+                flashImg.src = "flashlight.png";  
+                flashImg.width = "80";
+                flashImg.height = "80"
+                var lockTwo = document.getElementById('lockers'); 
+                lockTwo.appendChild(flashImg);      
+            };
+            var c = document.getElementById("three");c.addEventListener("click", tipThree);c.addEventListener("click", getThree);
+            function tipThree() {
+            alert('找到了课本！课本扉页写着激励自己学习的名言警句：我无法找到任何理由替自己辩解，因为我便是自己的障碍。')}
+            function getThree() {
+var booImg = document.createElement("img");       
+                booImg.src = "book.png";   
+                booImg.width = "80";
+                booImg.height = "80"
+                var lockThree = document.getElementById('lockers');   
+                lockThree.appendChild(booImg);        
+            };
+function getFour() {
+                var prop
+                var prop = prompt("只有聪明的人才能知道这是在干什么：", "请输入");
+                var hooImg = document.createElement("img");       
+                hooImg.src = "hook.png";    
+                hooImg.width = "80";
+                hooImg.height = "80"
+                var lockFour = document.getElementById('lockers');
+                if (prop == 'FLASHLIGHT') {
+                    alert('打开手电筒，发现沙发下有个长钩！不过会有什么用呢？');
+                    lockFour.appendChild(hooImg);
+                } else {
+                    alert('似乎行不通...')}}
+            function getFive() {var propOne
+var propOne = prompt("只有聪明的人才能知道这是在干什么：", "请输入");
+                var keImg = document.createElement("img");       
+                keImg.src = "key.png";   //给img元素的src属性赋值  
+                keImg.width = "50"; keImg.height = "50"
+                var lockFive = document.getElementById('lockers');
+                if (propOne == 'HOOK') {
+                    alert('把钩子伸到了床后的缝隙里....获得了万能钥匙！可以打开除了玄关以外的所有锁哦！');
+                    lockFive.appendChild(keImg);} else {alert('似乎行不通...')}}
+        function getSix() {var propTwo
+var propTwo = prompt("只有聪明的人才能知道这是在干什么：", "请输入");
+                var waImg = document.createElement("img");      
+                waImg.src = "watch.png";   //给img元素的src属性赋值  
+                waImg.width = "80";waImg.height = "60"
+                var lockSix = document.getElementById('lockers');
+                if (propTwo == 'KEY') {alert('用万能钥匙打开了抽屉...获得了手表!现在是上午8点半整，和我的生日日期一样，好巧。');
+                    lockSix.appendChild(waImg);} else {alert('似乎行不通...')}}
+function getSeven() {var propThree
+var propThree = prompt("只有聪明的人才能知道这是在干什么：", "请输入");
+                var caImg = document.createElement("img");      
+                caImg.src = "bus card.png";    caImg.width = "80";caImg.height = "60"
+                var lockSeven = document.getElementById('lockers');
+                if (propThree == 'KEY') {alert('用万能钥匙打开了阳台的玻璃门...从昨天穿的衣服口袋里拿到了公交卡！公交卡的卡号是9位数，和密码柜的密码数字位数相同。');
+                    lockSeven.appendChild(caImg);} else {alert('似乎行不通...')}}
+            function getEight() {var propFour
+                var propFour = prompt("只有聪明的人才能知道这是在干什么：", "请输入");
+                var peImg = document.createElement("img");       
+                peImg.src = "pen.png";  peImg.width = "80";peImg.height = "90"
+                var lockEight = document.getElementById('lockers');
+                if (propFour == 'HOOK') {alert('用钩子把掉到桌子后面的笔捡了起来...笔上镌刻着我的名字：LEON');lockEight.appendChild(peImg);} else {alert('似乎行不通...')}}
+            function getNine() {var propFive 
+                var propFive = prompt("如果你已经收集了其他所有东西，自然也会知道密码", "请输入密码");
+                var glImg = document.createElement("img");     
+                glImg.src = "glasses.png";   
+                glImg.width = "90";glImg.height = "70"
+                var lockEight = document.getElementById('lockers');
+                if (propFive == '110370830') {alert('输入正确...从密码箱里获得了眼镜！');
+                lockEight.appendChild(glImg);
+ clearInterval(z_timer);
+var z_passTime = document.getElementById('z_hour').innerText + ' 时 ' + document.getElementById('z_minute').innerText + ' 分 ' + document.getElementById('z_second').innerText + ' 秒';
+alert('恭喜你达成通关条件！通关代码：88888888，耗时：' + z_passTime);} else {alert('似乎行不通...')}}
+            function getTen() {var propSix 
+                var propSix = prompt("请输入暗号");
+                var hiImg = document.createElement("img");       
+                hiImg.src = "hide.jpg";    hiImg.width = "90";hiImg.height = "90"
+                var lockNine = document.getElementById('lockers');if (propSix == '888888') {alert('恭喜你获得了灭霸的响指！虽然他不能帮你消灭人类，但能帮你暂停时间，再也不用怕迟到啦！游戏结束！');
+                    lockNine.appendChild(hiImg);} else {alert('似乎行不通...')}}
+                   </script>
+
+
+
+
+
+</body>
+
+</html>
